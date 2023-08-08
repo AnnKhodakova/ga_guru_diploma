@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "diploma"
+version = "0.1.0"
+description = "diploma for qa guru"
+authors = ["Ann Khodakova <annkhodakova88@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = ">=7.3.1,<7.4.0"
+requests = ">=2.30.0,<2.31.0"
+selene = "2.0.0rc4"
+voluptuous = "^0.13.1"
+graphql-query = "^1.1.1"
+allure-pytest = "^2.13.2"
+webdriver-manager = "3.8.6"
+selenium = "4.8.3"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
