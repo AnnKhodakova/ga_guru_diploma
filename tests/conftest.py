@@ -31,6 +31,7 @@ def setup_browser():
     browser.config.window_width = 1500
     browser.config.timeout = 40.0
     browser.config.wait_for_no_overlap_found_by_js = True
+    browser.config.hold_browser_open = False
     options = Options()
 
     selenoid_capabilities = {

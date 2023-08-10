@@ -40,7 +40,7 @@ class CompanyInformationPage:
         return self
 
     def type_information_about_company_activity(self):
-        browser.all('.input')[3].should(be.visible).type(self.company.activity).wait_until(be.not_.blank)
+        browser.all('.input')[1].should(be.visible).type(self.company.activity).wait_until(be.not_.blank)
         return self
 
     def should_have_information(self, capital):
@@ -48,7 +48,7 @@ class CompanyInformationPage:
         self.company_name.should(have.value(self.company.name))
         self.next_button.perform(command.js.scroll_into_view)
         self.company_phone.should(have.value(self.company.phone))
-        browser.all('.input')[3].should(have.value(self.company.activity))
+        browser.all('.input')[1].should(have.value(self.company.activity))
         browser.element('[placeholder="Share Capital, EUR"]').should(have.value(capital))
         return self
 
